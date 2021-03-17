@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body{
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;  
+            margin:0px;
+            padding:0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        canvas{
+            box-shadow: black 20px 10px 50px;
+        }
+        .button{
+            align-items: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:white; font-family:Trebuchet MS;" >Enter the SNAKE DUNGEON</h1>
+    <p2 style="font-family: Trebuchet MS;color:antiquewhite">Please press "up" or "down" or "left" or "right" arrow keys to start the Game :)</p2><br>
+    <canvas id="game" width="625" height="625"></canvas><br>
+    <script src="snake.js"></script>
+    <button style="font-family: Trebuchet MS;" class="button" id="restart" onclick='window.location.reload();' >RESTART GAME</button><br>
+
+</body>
+</html>
